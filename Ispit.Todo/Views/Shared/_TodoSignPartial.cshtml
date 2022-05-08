@@ -1,0 +1,11 @@
+﻿@using Ispit.Todo.Data
+@using Microsoft.AspNetCore.Identity
+
+
+
+ @if (User.Identity.IsAuthenticated)
+    { 
+       <li class="nav-item">
+         <a class="nav-link text-dark" asp-area="" asp-controller="Todolist" asp-action="Index">ToDo</a>   
+       </li>
+    }
